@@ -1,0 +1,93 @@
+@mixin active {
+    border-radius: 5px;
+    width: 60px;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+}
+
+body {
+    background-image: url('./imgs/pexels-nathan-engel-436413.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+.container {
+    position: relative;
+}
+
+.nav {
+    position: fixed;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    color: #fff;
+    display: flex;
+    padding: 50px 50px;
+    font-size: 26px;
+    .logo {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        i {
+            display: none;
+        }
+    }
+    .home-about {
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        div {
+            width: 48%;
+            text-align: center;
+        }
+    }
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+// for phone
+$breakpoint-tablet: 800px;
+@media (max-width: $breakpoint-tablet) {
+    .nav .logo i {
+        display: block;
+    }
+    .nav {
+        padding: 10px 12px;
+        height: 45px;
+        transition: 1s ease;
+        -webkit-transition: 1s ease;
+        -moz-transition: 1s ease;
+        -ms-transition: 1s ease;
+        -o-transition: 1s ease;
+    }
+    .style {
+        height: 145px;
+    }
+    .nav .logo,
+    .nav .home-about,
+    .nav .home-about div {
+        width: 100%;
+    }
+    .home-about div {
+        padding: 10px;
+    }
+}
