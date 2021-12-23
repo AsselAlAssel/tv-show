@@ -7,6 +7,8 @@ import Main from "./componenets/main";
 import "./componenets/js"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./componenets/about";
+import AboutMove from "./componenets/aboutMove";
+import Card from "./componenets/card";
 
 class App extends Component {
   render() {
@@ -17,6 +19,7 @@ class App extends Component {
       <Routes>
       <Route path="/" exact element={<Main/>} />
       <Route path="/about"  element={<About/>} />
+      <Route path="/aboutMove"  element={<AboutMove/>} />
 
       </Routes>
        </BrowserRouter>
