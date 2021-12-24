@@ -29,7 +29,7 @@ export default class Main extends Component {
           <form action="" onSubmit={this.handelSubmit}>
             <input
               type="text"
-              onChange={(e) => (this.search = e.target.value.trim())}
+              onChange={(e)=> (this.search = e.target.value.trim())}
             />
             <input type="image" src={search} />
           </form>
