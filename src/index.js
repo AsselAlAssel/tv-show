@@ -8,10 +8,12 @@ import "./componenets/js"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./componenets/about";
 import AboutMove from "./componenets/aboutMove";
-import Card from "./componenets/card";
+
 
 class App extends Component {
+  
   render() {
+   
     return (
       <div className="container">
         <NavBar />
